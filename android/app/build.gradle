@@ -1,7 +1,8 @@
 
 apply plugin: 'com.android.application'
-apply plugin: 'dev.flutter.flutter-gradle-plugin'
 apply plugin: 'com.google.gms.google-services'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
 
 
 android {
