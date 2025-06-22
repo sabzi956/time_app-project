@@ -10,11 +10,6 @@ android {
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
-    dependencies {
-        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.3'
-        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.3'
-
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -35,7 +30,6 @@ android {
         versionCode = flutter.versionCode.toInteger()
         versionName = flutter.versionName
 
-        ndkVersion '28.0.12916984'
     }
 
     buildTypes {
@@ -49,4 +43,10 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.3'
+
 }
